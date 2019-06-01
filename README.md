@@ -62,9 +62,9 @@ $ npm run test:cov
 
 ## dependencies for authModule
 
-npm i typegoose jsonwebtoken passport passport-jwt bcryptjs @nestjs/passport
-# for dev
-npm i -D @types/jsonwebtoken @types/passport @types/passport-jwt @types/bcryptjs
+ npm i typegoose jsonwebtoken passport passport-jwt bcryptjs @nestjs/passport
+ # for dev
+ npm i -D @types/jsonwebtoken @types/passport @types/passport-jwt @types/bcryptjs
 
 ## Support
 
