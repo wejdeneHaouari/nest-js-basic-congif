@@ -10,14 +10,17 @@ import { AuthService } from './shared/auth/auth.service';
 import { JwtStrategy } from './shared/auth/jwt-strategy/jwt-strategy.service';
 import { AuthController } from './shared/auth/auth.controller';
 import { TestController } from './test/test.controller';
+import { TodoService } from './todo/todo.service';
+import { TodoModule } from './todo/todo.module';
 
 
 @Module({
   imports: [ MongooseModule.forRoot(ConfigurationService.connectionString),
     SharedModule,
-    UserModule],
+    UserModule,
+    TodoModule],
   controllers: [AppController, AuthController, TestController],
-  providers: [AppService, AuthService, JwtStrategy],
+  providers: [AppService, AuthService, JwtStrategy, TodoService],
 })
 export class AppModule {
   // static to not have injection in main ts
