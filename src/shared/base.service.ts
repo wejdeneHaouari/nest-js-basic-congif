@@ -1,54 +1,53 @@
 import 'automapper-ts/dist/automapper';
-import { Model, Document, Types } from 'mongoose';
-import { Typegoose } from 'typegoose';
+import { Types } from 'mongoose';
+import { InstanceType, ModelType, Typegoose } from 'typegoose';
 
-export abstract class BaseService<T extends Document> {
-  protected model: Model<T>;
-  protected mapper: AutoMapperJs.AutoMapper;
+export abstract class BaseService<T extends Typegoose> {
+  protected _model: ModelType<T>;
+  protected _mapper: AutoMapperJs.AutoMapper;
 
   private get modelName(): string {
-    return this.model.modelName;
+    return this._model.modelName;
   }
 
   private get viewModelName(): string {
-    return `${this.model.modelName}Vm`;
+    return `${this._model.modelName}Vm`;
   }
 
   async map<K>(
-    object: Partial<T> | Array<Partial<T>>,
-    isArray: boolean = false,
-    sourceKey?: string,
-    destinationKey?: string,
+    object: Partial<InstanceType<T>> | Array<Partial<InstanceType<T>>>,
+    sourceKey: string = this.modelName,
+    destinationKey: string = this.viewModelName,
   ): Promise<K> {
-    const _sourceKey = isArray ? `${sourceKey || this.modelName}[]` : sourceKey || this.modelName;
-    const _destinationKey = isArray
-    ? `${destinationKey || this.viewModelName}[]`
-      : destinationKey || this.viewModelName;
-    return this.mapper.map(_sourceKey, _destinationKey, object);
+    return this._mapper.map(sourceKey, destinationKey, object);
   }
 
-  async findAll(filter = {}): Promise<T[]> {
-    return this.model.find(filter).exec();
+  async findAll(filter = {}): Promise<InstanceType<T>[]> {
+    return this._model.find(filter).exec();
   }
 
-  async findOne(filter = {}): Promise<T> {
-    return this.model.findOne(filter).exec();
+  async findOne(filter = {}): Promise<InstanceType<T>> {
+    return this._model.findOne(filter).exec();
   }
 
-  async findById(id: string): Promise<T> {
-    return this.model.findById(this.toObjectId(id)).exec();
+  async findById(id: string): Promise<InstanceType<T>> {
+    return this._model.findById(this.toObjectId(id)).exec();
   }
 
-  async create(item: T): Promise<T> {
-    return this.model.create(item);
+  async create(item: InstanceType<T>): Promise<InstanceType<T>> {
+    return this._model.create(item);
   }
 
-  async delete(id: string): Promise<T> {
-    return this.model.findByIdAndRemove(this.toObjectId(id)).exec();
+  async delete(id: string): Promise<InstanceType<T>> {
+    return this._model.findByIdAndRemove(this.toObjectId(id)).exec();
   }
 
-  async update(id: string, item: T): Promise<T> {
-    return this.model.findByIdAndUpdate(this.toObjectId(id), item, { new: true }).exec();
+  async update(id: string, item: InstanceType<T>): Promise<InstanceType<T>> {
+    return this._model.findByIdAndUpdate(this.toObjectId(id), item, { new: true }).exec();
+  }
+
+  async clearCollection(filter = {}): Promise<any> {
+    return this._model.deleteMany(filter).exec();
   }
 
   private toObjectId(id: string): Types.ObjectId {

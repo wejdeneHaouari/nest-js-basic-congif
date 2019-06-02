@@ -5,12 +5,19 @@ import { AppService } from './app.service';
 import { SharedModule } from './shared/shared.module';
 import { ConfigurationService } from './shared/configuration/configuration.service';
 import { Configuration } from './shared/configuration/configuration.enum';
+import { UserModule } from './user/user.module';
+import { AuthService } from './shared/auth/auth.service';
+import { JwtStrategy } from './shared/auth/jwt-strategy/jwt-strategy.service';
+import { AuthController } from './shared/auth/auth.controller';
+import { TestController } from './test/test.controller';
+
 
 @Module({
   imports: [ MongooseModule.forRoot(ConfigurationService.connectionString),
-    SharedModule],
-  controllers: [AppController],
-  providers: [AppService],
+    SharedModule,
+    UserModule],
+  controllers: [AppController, AuthController, TestController],
+  providers: [AppService, AuthService, JwtStrategy],
 })
 export class AppModule {
   // static to not have injection in main ts

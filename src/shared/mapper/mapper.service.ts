@@ -12,5 +12,10 @@ export class MapperService {
   private initializeMapper(): void {
     this.mapper.initialize(MapperService.configure);
   }
-  private static configure(config: AutoMapperJs.IConfiguration): void{}
+  private static configure(config: AutoMapperJs.IConfiguration): void{
+    config
+      .createMap('User', 'UserVm')
+      .forSourceMember('_id', opts => opts.ignore())
+      .forSourceMember('password' , opts => opts.ignore());
+  }
 }
