@@ -62,7 +62,8 @@ export class AuthService {
     const isMatch = await compare(password, user.password);
 
     if (!isMatch) {
-      throw new HttpException('Invalid crendentials', HttpStatus.BAD_REQUEST);
+      console.log(user.password);
+      throw new HttpException('Invalid password', HttpStatus.BAD_REQUEST);
     }
 
     const payload: JwtPayload = {
