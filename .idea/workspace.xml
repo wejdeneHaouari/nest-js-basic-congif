@@ -2,28 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a0890bc-9777-4fc4-a1a2-c759a50fcb71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/shared/api-exception.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/auth/jwt-payload.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/filters/http-exception.filter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/utilities/enum-to-array.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/utilities/get-operation-id.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/user/models/user-role.enum.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/user/models/user.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/user/models/view-models/login-response-vm.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/user/models/view-models/login-vm.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/user/models/view-models/register-vm.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/user/models/view-models/user-vm.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/default.ts" beforeDir="false" afterPath="$PROJECT_DIR$/config/default.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shared/base.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/base.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/base.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/base.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/configuration/configuration.enum.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/configuration/configuration.enum.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/mapper/mapper.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/mapper/mapper.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/shared.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/shared.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/models/user.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/models/user.model.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,22 +17,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/user/models/view-models/user-vm.model.ts">
+        <entry file="file://$PROJECT_DIR$/src/shared/base.module.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="92">
-              <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#77#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/user/models/view-models/register-vm.model.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
               </folding>
@@ -60,11 +28,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/user/models/view-models/login-vm.model.ts">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/user/user.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="23">
+              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/user/models/user.model.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#58#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,7 +67,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/shared/configuration/configuration.service.ts" />
-        <option value="$PROJECT_DIR$/src/shared/base.module.ts" />
         <option value="$PROJECT_DIR$/src/shared/base.service.ts" />
         <option value="$PROJECT_DIR$/src/shared/api-exception.model.ts" />
         <option value="$PROJECT_DIR$/src/shared/utilities/enum-to-array.ts" />
@@ -95,7 +74,6 @@
         <option value="$PROJECT_DIR$/config/default.ts" />
         <option value="$PROJECT_DIR$/src/shared/configuration/configuration.enum.ts" />
         <option value="$PROJECT_DIR$/src/user/models/user-role.enum.ts" />
-        <option value="$PROJECT_DIR$/src/user/models/user.model.ts" />
         <option value="$PROJECT_DIR$/src/user/models/view-models/user-vm.model.ts" />
         <option value="$PROJECT_DIR$/src/user/models/view-models/login-vm.model.ts" />
         <option value="$PROJECT_DIR$/src/user/models/view-models/register-vm.model.ts" />
@@ -111,6 +89,8 @@
         <option value="$PROJECT_DIR$/src/shared/auth/auth.controller.ts" />
         <option value="$PROJECT_DIR$/src/app.module.ts" />
         <option value="$PROJECT_DIR$/src/user/user.controller.ts" />
+        <option value="$PROJECT_DIR$/src/shared/base.module.ts" />
+        <option value="$PROJECT_DIR$/src/user/models/user.model.ts" />
       </list>
     </option>
   </component>
@@ -138,6 +118,12 @@
               <item name="nest-js-server" type="b2602c69:ProjectViewProjectNode" />
               <item name="nest-js-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nest-js-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nest-js-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nest-js-server" type="b2602c69:ProjectViewProjectNode" />
@@ -200,15 +186,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559419119746</updated>
-      <workItem from="1559419124146" duration="21498000" />
+      <workItem from="1559419124146" duration="22383000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21498000" />
+    <option name="totallyTimeSpent" value="22383000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="npm" side_tool="true" />
       <window_info id="Favorites" side_tool="true" />
@@ -324,16 +311,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="3301" column="4" selection-start-line="3301" selection-start-column="4" selection-end-line="3301" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shared/base.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -473,19 +450,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/user/user.module.ts">
+    <entry file="file://$PROJECT_DIR$/src/user/models/view-models/login-vm.model.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        <state relative-caret-position="46">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/user/models/user.model.ts">
+    <entry file="file://$PROJECT_DIR$/src/user/models/view-models/register-vm.model.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-230">
-          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        <state relative-caret-position="69">
+          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
           <folding>
-            <element signature="e#0#58#0" expanded="true" />
+            <element signature="e#0#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -500,20 +477,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/user/models/view-models/register-vm.model.ts">
+    <entry file="file://$PROJECT_DIR$/src/shared/base.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        <state relative-caret-position="92">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/user/models/view-models/login-vm.model.ts">
+    <entry file="file://$PROJECT_DIR$/src/user/user.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="23">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/user/models/user.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

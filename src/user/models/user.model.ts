@@ -2,7 +2,7 @@ import { InstanceType, ModelType, prop } from 'typegoose';
 import {BaseModel, schemaOptions} from '../../shared/base.module';
 import { UserRole } from './user-role.enum';
 
-export class User extends BaseModel {
+export class User extends BaseModel<User> {
   @prop({
     required: [true, 'Username is required'],
     unique: true,
