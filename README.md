@@ -59,7 +59,8 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
-
+## dependencies for config
+npm i config loadash @nestjs/mongoose @nestjs/swagger automapper-ts
 ## dependencies for authModule
 
  npm i typegoose jsonwebtoken passport passport-jwt bcryptjs @nestjs/passport
